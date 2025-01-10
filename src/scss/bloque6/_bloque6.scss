@@ -1,0 +1,342 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque6 {
+  height: auto;
+  background-color: v.$ingenieria;
+  position: relative;
+  height: 56rem;
+  overflow: hidden;
+  @include m.phone_375 {
+    height: 65rem;
+  }
+  @include m.phone_390 {
+    height: 68rem;
+  }
+  @include m.phone_414 {
+    height: 72rem;
+  }
+  @include m.tablet_768 {
+    background-color: transparent;
+    height: auto;
+  }
+}
+
+.bloque6Container {
+  position: relative;
+  z-index: 10;
+}
+
+.bloque6ImageMovil {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  @include m.tablet_768 {
+    display: none;
+  }
+  img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+.bloque6ImageDesktop {
+  display: none;
+  @include m.tablet_768 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.bloque6BgWhite {
+  background-color: white;
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+  top: -.2rem;
+  left: 0;
+  z-index: 0;
+  @include m.phone_375 {
+    height: 8rem;
+    top: -1rem;
+  }
+  @include m.phone_390 {
+    height: 10rem;
+  }
+  @include m.tablet_768 {
+    display: none;
+  }
+}
+
+.bloque6Title {
+  width: 100%;
+  // background-color: green;
+  position: relative;
+  z-index: 5;
+  margin-top: 8rem;
+  display: grid;
+  justify-items: center;
+  row-gap: 1.5rem;
+  @include m.phone_375 {
+    margin-top: 12rem;
+  }
+  @include m.phone_390 {
+    margin-top: 13rem;
+  }
+  @include m.phone_414 {
+    margin-top: 15rem;
+  }
+  @include m.tablet_768 {
+    margin-top: 4rem;
+  }
+  @include m.desktop_1020 {
+    margin-top: 6rem;
+  }
+  @include m.desktop_1200 {
+    margin-top: 9rem;
+  }
+  h3, h4 {
+    margin: 0;
+    color: black;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    // background-color: yellow;
+    width: 90%;
+    @include m.phone_414 {
+      width: 75%;  
+    }
+    @include m.desktop_1200 {
+      font-size: 3rem;
+    }
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    width: 85%;
+    // background-color: purple;
+    @include m.tablet_768 {
+      width: 50%;
+    }
+    @include m.desktop_1020 {
+      width: 35%;
+    }
+    @include m.desktop_1200 {
+      font-size: 1.8rem;
+      width: 40%;
+    }
+  }
+}
+
+.bloque6Grid {
+  margin-top: 3rem;
+  // background-color: green;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 5;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  @include m.phone_375 {
+    margin-top: 5rem;
+  }
+  @include m.phone_390 {
+    margin-top: 6rem;
+  }
+  @include m.tablet_768 {
+    margin: 4rem 0;
+  }
+  @include m.desktop_1200 {
+    margin: 5rem 0 7rem 0;
+  }
+}
+
+.bloque6GridContainer {
+  margin-top: 5rem;
+  background-color: white;
+  height: auto;
+  width: 25rem;
+  position: relative;
+  z-index: 5;
+  border-radius: 1rem;
+  padding-top: 7rem;
+  @include m.tablet_768 {
+    margin-top: 0rem;
+    width: 50rem;
+    // padding-left: 38%;
+    // padding-top: 5rem;
+    padding: 5rem 2rem 2rem 38%;
+  }
+  @include m.desktop_1020 {
+    width: 58rem;
+    // padding: 5rem 2rem 2rem 38%;
+  }
+  @include m.desktop_1200 {
+    width: 75rem;
+    padding: 8rem 4rem 2rem 38%;
+  }
+}
+
+.bloque6GridContainerImage {
+  width: 100%;
+  position: absolute;
+  top: -5rem;
+  // background-color: rgba(255, 255, 0, 0.205);
+  display: grid;
+  justify-content: center;
+  // background-color: red;
+  @include m.tablet_768 {
+    width: auto;
+    top: 25%;
+    left: 8%;
+  }
+  @include m.desktop_1020 {
+    top: 20%;
+    left: 10%;
+  }
+  @include m.desktop_1200 {
+    top: 24%;
+    left: 11%;
+  }
+  img {
+    width: 10rem;
+    @include m.tablet_768 {
+      width: 13rem;
+    }
+    @include m.desktop_1020 {
+      width: 15rem;
+    }
+    @include m.desktop_1200 {
+      width: 17rem;
+    }
+  }
+}
+
+.bloque6GridContainerComillas {
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  @include m.desktop_1020 {
+    left: 1.5rem;
+  }
+  @include m.desktop_1200 {
+    left: 2.5rem;
+    top: 5rem;
+  }
+  img {
+    width: 3.5rem;
+    @include m.tablet_768 {
+      width: 4rem;
+    }
+    @include m.desktop_1200 {
+      width: 5rem;
+    }
+  }
+}
+
+.bloque6User {
+  border-bottom: 1px dashed gray;
+  display: grid;
+  justify-items: center;
+  h3, h4 {
+    margin: 0;
+    color: black;
+  }
+  h3 {
+    width: 80%;
+    // background-color: yellow;
+    text-align: center;
+    font-size: 1.7rem;
+    @include m.tablet_768 {
+      width: 100%;
+      text-align: left;
+    }
+    @include m.desktop_1200 {
+      font-size: 2.5rem;
+    }
+  }
+  h4 {
+    width: 80%;
+    // background-color: green;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: .5rem 0 1rem 0;
+    @include m.tablet_768 {
+      width: 100%;
+      text-align: left;
+    }
+    @include m.desktop_1200 {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.bloque6Description {
+  // background-color: green;
+  display: grid;
+  justify-items: center;
+  h4 {
+    color: black;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 85%;
+    // background-color: yellow;
+    padding: 1.5rem 0;
+    text-align: center;
+    @include m.tablet_768 {
+      width: 100%;
+      padding: 1rem 0 1.5rem 0;
+      text-align: left;
+    }
+    @include m.desktop_1020 {
+      font-size: 1.4rem;
+    }
+    @include m.desktop_1200 {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+.bloque6BackDesktop {
+  display: none;
+  @include m.desktop_1020 {
+    display: block;
+    position: absolute;
+    bottom: -13rem;
+    right: -12rem;
+    img {
+      width: 100rem;
+      position: relative;
+      z-index: 7;
+    }
+  }
+  @include m.desktop_1100 {
+    right: -8rem;
+  }
+  @include m.desktop_1200 {
+    right: -21rem;
+    bottom: -16rem;
+    img {
+      width: 135rem;
+    }
+  }
+  @include m.desktop_1420 {
+    bottom: -19rem;
+    img {
+      width: 144rem;
+    }
+  }
+}

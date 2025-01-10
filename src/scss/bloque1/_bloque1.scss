@@ -1,0 +1,936 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque1 {
+    height: auto;
+    transition: background-color 1.5s ease;
+    background-color: v.$ingenieria;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    position: relative;
+    @include m.desktop_1020 {
+        padding-bottom: 0;
+        height:  70rem;
+        // background-color: v.$color1;
+        // background: rgb(255,12,41);     
+        // background: linear-gradient(90deg, rgba(255,12,41,1) 50%, rgba(253,29,29,1) 50%, rgba(255,255,255,1) 50%);      
+    }
+    @include m.desktop_1340 {
+        height: 75rem;
+    }
+    @include m.desktop_1500 {
+        height: 80rem;
+    }
+    @include m.desktop_1800 {
+        height: 90rem;
+    }
+    // @include m.desktop_1280 {
+    //     height: 70rem;
+    // }
+}
+
+.shield_movil_top {
+    position: absolute;
+    width: 20rem;
+    right: -11rem;
+    transform: rotate(45deg);
+    top: -14rem;
+}
+
+.bloque1Container {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    @include m.phone_390 {
+        width: 83%;
+    }
+    @include m.phone_414 {
+        width: 80%;
+    }
+    @include m.tablet_768 {
+        width: 70%;
+    }
+    @include m.desktop_1020 {
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: repeat(2, 1fr);
+        // width: v.$max-width-1020;
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+.bloque1Container__left {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 4rem 0 2rem 0;
+    row-gap: 2rem;
+    // height: 33rem;
+    // transition: background-color 1.5s ease;
+    // background-color: v.$color1;
+    // position: relative;
+    // background-color: green;
+    // @include m.phone_360 {
+    //     height: 36rem;
+    // }
+    @include m.desktop_1020 {
+        padding: 0;
+        height: 100%;
+        row-gap: 0;
+    }
+    .bloque1_logoDesktop {
+        display: none;
+        @include m.desktop_1020 {
+            display: grid;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img {
+                bottom: -.5rem;
+                right: -.2rem;
+                position: absolute;
+                width: 47rem;
+            }
+        }
+        @include m.desktop_1060 {
+            img {
+                width: 47rem;
+            }
+        }
+        @include m.desktop_1080 {
+            img {
+                width: 48rem;
+            }    
+        }
+        @include m.desktop_1140 {
+            img {
+                width: 49rem;
+            }
+        }
+        @include m.desktop_1160 {
+            img {
+                width: 50rem;
+            }
+        }
+        @include m.desktop_1200 {
+            img {
+                width: 48rem;
+            }
+        }
+        @include m.desktop_1220 {
+            img {
+                width: 50rem;   
+            }
+        }
+        @include m.desktop_1340 {
+            img {
+                width: 53rem;
+            }
+        }
+        @include m.desktop_1500 {
+            img {
+                width: 55rem;
+            }
+        }
+        @include m.desktop_1800 {
+            img {
+                width: 67rem;
+            }
+        }
+    }
+}
+
+.bloque1MovilImage {
+    // background-color: yellow;
+    // position: absolute;
+    position: block;
+    width: 100%;
+    // top: 4rem;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 18rem;
+        @include m.desktop_1020 {
+            display: none;
+        }
+    }
+}
+
+.bloque1MovilText {
+    // background-color: green;
+    // position: relative;
+    position: block;
+    // top: 13rem;
+    display: grid;
+    text-align: center;
+    line-height: 1.7;
+    @include m.phone_375 {
+        padding: 0 2rem;
+    }
+    @include m.desktop_1020 {
+        padding: 0;
+        top: 7rem;
+        left: 4rem;
+        position: absolute;
+        text-align: left;
+    }
+    @include m.desktop_1060 {
+        left: 6rem;
+    }
+    @include m.desktop_1120 {
+        left: 8rem;
+    }
+    @include m.desktop_1160 {
+        // top: 3.5rem;
+    }
+    @include m.desktop_1200 {
+        left: 9.5rem;
+        top: 5.5rem;
+    }
+    @include m.desktop_1220 {
+        top: 3rem;
+        left: 10rem;
+    }
+    @include m.desktop_1260 {
+        left: 11rem;
+    }
+    @include m.desktop_1300 {
+        left: 12rem;
+    }
+    @include m.desktop_1340 {
+        top: 7rem;
+        left: 8rem;
+    }
+    @include m.desktop_1400 {
+        left: 10rem;    
+    }
+    h3, h4 {
+        margin: 0;
+    }
+    h4 {
+        display: none;
+        @include m.desktop_1020 {
+            display: block;
+            color: black;
+            font-weight: 800;
+            font-size: 2.2rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 2.1rem;
+        }
+        @include m.desktop_1340 {
+            font-size: 2.5rem;
+        }
+        @include m.desktop_1460 {
+            font-size: 3rem;
+        }
+    }
+    h3 {
+        color: white;
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 500;
+        @include m.desktop_1020 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+        @include m.desktop_1200 {
+            font-size: 3rem;
+        }
+        @include m.desktop_1340 {
+            font-size: 3.5rem;
+            line-height: 1.3;
+        }
+        @include m.desktop_1460 {
+            line-height: 1.1;
+            font-size: 3.8rem;
+        }
+        @include m.desktop_1900 {
+            font-size: 4.3rem;
+        }
+        span {
+            font-size: 3rem;
+            font-weight: 800;
+            @include m.desktop_1020 {
+                font-size: 3.3rem;
+            }
+            @include m.desktop_1200 {
+                // font-size: 3.3rem;
+            }
+            @include m.desktop_1340 {
+                font-size: 3.8rem;
+            }
+            @include m.desktop_1460 {
+                font-size: 4rem;
+            }
+            @include m.desktop_1800 {
+                font-size: 5.5rem;
+            }
+            @include m.desktop_1900 {
+                font-size: 5.8rem;
+            }
+        }
+    }
+}
+
+.bloque1DesktopTextTwo {
+    display: none;
+    @include m.desktop_1020 {
+        display: block;
+        position: absolute;
+        top: 17rem;
+        left: 4rem;
+        h3 {
+            margin: 0;
+            font-size: 2rem;
+            line-height: 1.4;
+            color: black;
+            font-weight: 600;
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+    @include m.desktop_1060 {
+        left: 6rem;
+    }
+    @include m.desktop_1120 {
+        left: 8rem;
+    }
+    @include m.desktop_1160 {
+        top: 16rem;
+    }
+    @include m.desktop_1200 {
+        top: 16rem;
+        left: 9.5rem;
+        h3 {
+            font-size: 2.2rem;
+        }
+    }
+    @include m.desktop_1220 {
+        top: 15rem;
+        left: 10rem;
+    }
+    @include m.desktop_1260 {
+        left: 11rem;    
+    }
+    @include m.desktop_1280 {
+        top: 16rem;
+    }
+    @include m.desktop_1300 {
+        left: 12rem;
+    }
+    @include m.desktop_1340 {
+        top: 18rem;
+        left: 8rem;
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+    @include m.desktop_1400 {
+        left: 10rem;
+    }
+    @include m.desktop_1460 {
+        top: 22rem;
+        h3 {
+            font-size: 2.1rem;
+        }
+    }
+    @include m.desktop_1500 {
+        top: 21.5rem;
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+// .bloque1Admision {
+//     position: absolute;
+//     bottom: 2rem;
+//     // background-color: green;
+//     width: 100%; //en desktop cambiar a width: 25rem;
+//     text-align: center;
+//     // background-color: green;
+//     @include m.phone_375 {
+//         bottom: 3.5rem;
+//     }
+//     @include m.desktop_1020 {
+//         width: 16rem;
+//         bottom: 4rem;
+//         left: 4rem;
+//         line-height: 1.2;
+//         text-align: left;
+//     }
+//     @include m.desktop_1060 {
+//         left: 6rem;
+//     }
+//     @include m.desktop_1120 {
+//         left: 8rem;
+//     }
+//     @include m.desktop_1160 {
+//         left: 8rem;
+//     }
+//     @include m.desktop_1200 {
+//         left: 9.5rem;
+//     }
+//     @include m.desktop_1220 {
+//         left: 10rem;
+//     }
+//     @include m.desktop_1260 {
+//         left: 11rem;
+//     }
+//     @include m.desktop_1280 {
+//         left: 11.5rem;
+//     }
+//     @include m.desktop_1300 {
+//         left: 12rem;
+//     }
+//     @include m.desktop_1320 {
+//         left: 12.5rem;
+//     }
+//     @include m.desktop_1340 {
+//         left: 8rem;
+//     }
+//     @include m.desktop_1400 {
+//         left: 10rem;
+//     }
+//     @include m.desktop_1500 {
+//         left: 9.5rem;
+//         width: 20rem;
+//     }
+//     h4, h3 {
+//         margin: 0;
+//         display: flex;
+//         align-items: center;
+//         font-size: 1.8rem;
+//         color: black;
+//         justify-content: center;
+//     }
+//     h3 {
+//         font-weight: 800;
+//         @include m.phone_360 {
+//             font-size: 2.5rem;
+//         }
+//         @include m.desktop_1020 {
+//             font-size: 2.5rem;
+//             line-height: 1;
+//             margin-top: 1rem;
+//         }
+//         @include m.desktop_1200 {
+//             font-size: 2.8rem;
+//         }
+//         @include m.desktop_1340 {
+//             font-size: 3rem;
+//         }
+//         @include m.desktop_1500 {
+//             font-size: 3.8rem;
+//         }
+//     }
+//     h4 {
+//         font-weight: 500;
+//         @include m.desktop_1020 {
+//             font-weight: 300;
+//             font-size: 1.7rem;
+//         }
+//         @include m.desktop_1200 {
+//             font-size: 1.8rem;
+//         }
+//         @include m.desktop_1340 {
+//             font-size: 2.5rem;
+//         }
+//         @include m.desktop_1500 {
+//             font-size: 2.8rem;
+//         }
+//     }
+// }
+
+.bloque1Admision {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+    @include m.desktop_1020 {
+        position: absolute;
+        justify-content: center;
+        width: 14rem;
+        // background-color: green;
+        bottom: 4rem;
+        left: 4rem;
+        line-height: 1.3;
+        align-items: flex-start;
+        // background-color: green;
+    }
+    @include m.desktop_1060 {
+        left: 6rem;
+    }
+    @include m.desktop_1160 {
+        left: 8rem;
+        // width: 19rem;
+        // bottom: 10rem;
+    }
+    @include m.desktop_1200 {
+        left: 9.5rem;
+        bottom: 4.4rem;
+    }
+    @include m.desktop_1220 {
+        left: 10rem;
+    }
+    @include m.desktop_1280 {
+        left: 11.5rem;
+        bottom: 4rem;
+    }
+    @include m.desktop_1320 {
+        left: 12rem;
+    }
+    @include m.desktop_1340 {
+        left: 8rem;
+        // bottom: 4rem;
+        width: 16rem;
+        // background-color: green;
+    }
+    @include m.desktop_1400 {
+        width: 20rem;
+        left: 10rem;
+        // background-color: red;
+    }
+    @include m.desktop_1420 {
+        left: 10rem;
+        // width: 18rem;
+    }
+    @include m.desktop_1500 {
+        // left: 9.5rem;
+        bottom: 6rem;
+        // width: 21rem;
+    }
+    h4, h3 {
+        margin: 0;
+        font-size: 1.8rem;
+        color: black;
+        @include m.phone_375 {
+            font-size: 2rem;
+        }
+    }
+    h3 {
+        @include m.phone_375 {
+            font-size: 2.5rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+        @include m.desktop_1200 {
+            font-size: 2.3rem;
+        }
+        @include m.desktop_1340 {
+            font-size: 2.6rem;
+        }
+        @include m.desktop_1400 {
+            font-size: 2.7rem;
+        }
+        @include m.desktop_1420 {
+            // font-size: 2rem;
+        }
+        @include m.desktop_1500 {
+            font-size: 2.3rem;
+        }
+    }
+    h4 {
+        font-weight: 400;
+        @include m.desktop_1020 {
+            font-weight: 300;
+            font-size: 1.4rem;
+            text-align: left;
+        }
+        @include m.desktop_1200 {
+            font-size: 1.6rem;
+        }
+        @include m.desktop_1340 {
+            font-size: 2rem;
+        }
+        @include m.desktop_1500 {
+            font-size: 1.8rem;
+        }
+    }
+    h5 {
+        margin: 0;
+        font-size: 1rem;
+        color: black;
+        font-weight: 500;
+        margin-top: 1rem;
+        @include m.desktop_1200 {
+            font-size: 1.15rem;
+        }
+        @include m.desktop_1340 {
+            font-size: 1.2rem;
+        }
+        @include m.desktop_1400 {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.bloque1Container__right {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    @include m.desktop_1020 {
+        position: relative;
+    }
+}
+
+.bloque1DesktopLogo {
+    display: none;
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+    @include m.desktop_1020 {
+        display: grid;
+        top: 6rem;
+    }
+    @include m.desktop_1060 {
+        right: 6rem;
+    }
+    @include m.desktop_1100 {
+        right: 7rem;
+    }
+    @include m.desktop_1140 {
+        right: 8rem;
+    }
+    @include m.desktop_1200 {
+        right: 9rem;
+    }
+    @include m.desktop_1220 {
+        top: 3.5rem;
+    }
+    @include m.desktop_1240 {
+        right: 10rem;
+    }
+    @include m.desktop_1280 {
+        right: 11rem;
+        top: 4rem;
+    }
+    @include m.desktop_1320 {
+        right: 12rem;
+    }
+    @include m.desktop_1340 {
+        top: 5rem;
+        right: 8rem;
+    }
+    @include m.desktop_1420 {
+        right: 9.5rem;    
+    }
+    @include m.desktop_1460 {
+        right: 11rem;   
+    }
+    @include m.desktop_1500 {
+        right: 9rem;
+        top: 7rem;
+    }
+    // @include m.desktop_1360 {
+    //     right: 1rem;
+    //     top: 4.5rem;
+    // }
+    img {
+        width: 20rem;
+        @include m.desktop_1340 {
+            width: 22rem;
+        }
+    }
+}
+
+.bloque1Container__form {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+    @include m.desktop_1020 {
+        // background-color: gray;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 0;
+    }
+    @include m.desktop_1220 {
+        align-items: center;
+    }
+    // @include m.desktop_1360 {
+    //     justify-content: flex-end;
+    // }
+    // @include m.phone_390 {
+    //     width: 90%;
+    // }
+}
+
+.formContainer {
+    // width: 29rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem 2rem;
+    overflow: hidden;
+    @include m.desktop_1020 {
+        height: 52.5rem;
+        width: 45rem;
+        position: relative;
+        // background-color: yellow;
+    }
+    @include m.desktop_1200 {
+        height: 53.5rem;
+    }
+    @include m.desktop_1220 {
+        bottom: -7.5rem;
+    }
+    // @include m.desktop_1280 {
+        
+    //     bottom: 5rem;
+    // }
+    @include m.desktop_1340 {
+        width: 55rem;
+        height: 55rem;
+    }
+    @include m.desktop_1500 {
+        width: 60rem;
+        height: 52rem;
+    }
+    @include m.desktop_1800 {
+        height: 60rem;
+        bottom: -5.5rem;
+    }
+}
+
+.formTitle {
+    height: 4rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 1.3rem;
+    @include m.desktop_1020 {
+        height: 6rem;
+        margin-bottom: 1.5rem;
+    }
+    h3, h4 {
+        margin: 0;
+        text-align: center;
+        height: 100%;
+        display: grid;
+        align-items: center;
+    }
+    h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        @include m.phone_375 {
+            font-size: 1.8rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+    }
+    h4 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        @include m.desktop_1020 {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.formGrid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) 1fr;
+    row-gap: 1.3rem;
+    height: 30rem;
+    @include m.desktop_1020 {
+        row-gap: 1.5rem;
+        height: 35rem;
+    }
+    @include m.desktop_1200 {
+        height: 38rem;
+    }
+    @include m.desktop_1340 {
+        height: 40rem;
+        row-gap: 1.5rem;
+    }
+    @include m.desktop_1800 {
+        height: 50rem;
+        row-gap: 2.3rem;
+    }
+    input, select {
+        height: 100%;
+        width: 100%;
+        border-radius: .5rem;
+        outline: none;
+        border: 1px solid black;
+        padding-left: .5rem;
+        color: rgba(0, 0, 0, 0.782);
+        @include m.desktop_1800 {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.double__form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    @include m.desktop_1020 {
+        column-gap: 1.2rem;
+    }
+    @include m.desktop_1800 {
+        column-gap: 2rem;
+    }
+    input, select {
+        color: rgba(0, 0, 0, 0.782);
+        height: 100%;
+        width: 100%;
+        padding-left: .5rem;
+        @include m.desktop_1800 {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.terminos {
+    // background-color: purple;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    margin: .5rem 0;
+    input {
+        color: black;
+        @include m.tablet_768 {
+            transform: scale(.7);
+        }
+        @include m.desktop_1020 {
+            transform: scale(.9);
+        }
+        @include m.desktop_1800 {
+            transform: scale(.7);
+        }
+        // @include m.desktop_1920 {
+        //     transform: scale(.6);
+        // }
+    }
+    label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: .7rem;
+        font-size: 1.1rem;
+        font-family: "Work Sans", sans-serif;
+        @include m.desktop_1920 {
+            font-size: 1.6rem;
+        }
+    }
+    a {
+        color: black;
+        @include m.desktop_1060 {
+            font-size: 1.4rem;
+        }
+        @include m.desktop_1340 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.captcha {
+    height: 6rem !important;
+    // background-color: orange;
+    overflow: hidden;
+    // margin-bottom: 1rem !important;
+    display: flex;
+    justify-items: center;
+    @include m.phone_480 {
+        height: 6rem !important;
+    }
+    @include m.tablet_768 {
+        margin-bottom: 2rem !important;
+    }
+    @include m.desktop_1020 {
+        margin-bottom: 1rem !important;
+    }
+}
+
+.g-recaptcha {
+    height: 100%;
+    padding-left: 3.5rem;
+    padding-top: .4rem;
+    transform: scale(0.67);
+    transform-origin: 0 0;
+    @include m.phone_360 {
+        padding-left: 6.7rem; 
+    }
+    @include m.phone_400 {
+        padding-left: 8.5rem;    
+    }
+    @include m.phone_414 {
+        padding-left: 25%;
+    }
+    @include m.phone_480 {
+        padding-left: 30%;
+        transform: scale(0.7);
+    }
+    @include m.tablet_760 {
+        padding-left: 40%;
+    }
+    @include m.tablet_834 {
+        padding-left: 25%;
+    }
+    @include m.desktop_1020 {
+        padding-left: 30%;
+    }
+    @include m.desktop_1280 {
+        padding-left: 24.5%;
+    }
+    @include m.desktop_1300 {
+        padding-left: 34%;
+    }
+    @include m.desktop_1360 {
+        padding-left: 41%;
+    }
+    @include m.desktop_1920 {
+        padding-left: 30%;
+    }
+    // @include m.desktop_1440 {
+    //     padding-left: 24%;
+    // }
+    // @include m.desktop_1920 {
+    //     padding-left: 21%;
+    // }
+}
+
+.button_enviar {
+    button {
+        width: 100%;
+        height: 4rem;
+        border: none;
+        background-color: black;
+        border-radius: .8rem;
+        @include m.desktop_1800 {
+            height: 5rem;
+        }
+        h3 {
+            margin: 0;
+            color: white;
+            @include m.desktop_1800 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.backgroundRepeat {
+    transition: background-color 1.5s ease;
+    background-color: v.$color2 !important;
+}
+
+.bloque7GridGroupOther {
+    // transition: background 1.5s ease;
+    transition: background-color 1.4s ease;
+    background-color: v.$color2 !important;
+}
