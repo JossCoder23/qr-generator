@@ -24,6 +24,7 @@ html(lang="es")
         link(rel='preconnect' href='https://fonts.googleapis.com')
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js' defer)
     body#top
         a.bloqueFloat(href="#top") 
             h3 Quiero más información
@@ -55,207 +56,254 @@ html(lang="es")
                         img(src='https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/logo_one.webp' loading='lazy' alt='logo_one')
                     .bloque1Container__form
                         #crmWebToEntityForm.formContainer.crmWebToEntityForm
-                        meta(name='viewport' content='width=device-width, initial-scale=1.0')
-                        meta(http-equiv='content-type' content='text/html;charset=UTF-8')
-                        .formTitle
-                            h3 D&eacute;janos tus datos y
-                            h4 nos contactaremos contigo
-                        form#webform6093725000001039003.formGrid(action='https://crmsandbox.zoho.com/crm/WebToLeadForm' name='WebToLeads3503766000678594001' method='POST' onsubmit='javascript:document.charset="UTF-8"' accept-charset='UTF-8')
-                            input(type='text' style='display:none;' name='xnQsjsdp' value='dca2765a5d03016cc1ad249409ff360c153a5fb0aaecfb26c1b12a317d835ec6')
-                            input#zc_gad(type='hidden' name='zc_gad' value='')
-                            input(type='text' style='display:none;' name='xmIwtLD' value='3b29c2ff618317f97dd6fe14c66f4b58b836008d814bab6189b926723e3d6c43e37730ae448c9ec137dd562bea4e913d')
-                            input(type='text' style='display:none;' name='actionType' value='TGVhZHM=')
-                            input(type='text' style='display:none;' name='returnURL' value='https://lp.cayetano.edu.pe/gracias-ingenieria-biomedica')
-                            style.
-                                .oculto {
-                                    display: none;
-                                }
-                            .double__form
-                            input#First_Name.requerido(type='text' name='First Name' maxlength='40' placeholder='Nombres*' required='')
-                            input#Last_Name.requerido(type='text' name='Last Name' maxlength='40' placeholder='Apellidos*' required='')
-                            .double__form
-                            select#LEADCF20.requerido(name='LEADCF20' required='')
-                                option(value='' disabled='' selected='') Tipo de documento*
-                                option(value='DNI') DNI
-                                option(value='CarnédeExtranjería') Carnet de Extranjeria
-                                option(value='Pasaporte') Pasaporte
-                            input#LEADCF21.requerido(type='text' name='LEADCF21' maxlength='20' placeholder='N.° de documento*' required='' disabled='true')
-                            input#Mobile.requerido(type='text' name='Mobile' maxlength='9' pattern='9[0-9]{8}' placeholder='Déjanos tu número de WhatsApp*')
-                            input#Email.requerido(type='text' name='Email' maxlength='100' ftype='email' placeholder='Correo*' required='')
-                            select#LEADCF14.requerido(name='LEADCF14' required='')
-                            option(value='' disabled='' selected='') - &iquest;En qu&eacute; a&ntilde;o est&aacute;s del colegio? -
-                            option(value='5to de secundaria') 5to. de secundaria
-                            option(value='4to de secundaria') 4to. de secundaria
-                            option(value='3ro de secundaria') 3ro. de secundaria
-                            option(value='Ya termine el colegio') Ya termin&eacute; el colegio 
-                            .oculto
-                            input#utm_source.UTM(name='LEADCF183' value='')
-                            // utm_content
-                            input#utm_medium.UTM(name='LEADCF189' value='')
-                            // utm_medium
-                            input#utm_campaign.UTM(name='LEADCF24' value='')
-                            // utm_campaign
-                            input#utm_id.UTM(name='LEADCF203' value='')
-                            // utm_ID
-                            input#utm_term.UTM(name='LEADCF184' value='')
-                            // utm-term
-                            input#utm_content.UTM(name='LEADCF182' value='')
-                            // utm_content
-                            input#reference(name='LEADCF168' value='')
-                            // reference
-                            input#LEADCF185(name='LEADCF185' value='PREGRADO')
-                            // marca
-                            input(name='Lead Status' value='Sin gestión')
-                            // lead status
-                            input(name='LEADCF1' value='Automáticos')
-                            // tipo_origen
-                            input(name='LEADCF198' value='Postulante')
-                            // parentezco
-                            input(name='Lead Source' value='Landing Page')
-                            // fuente_lead
-                            input#LEADCF22(name='LEADCF22' value='')
-                            // comentario
-                            input#LEADCF194(name='LEADCF194' value='')
-                            // horario_disponible
-                            input#LEADCF220(name='LEADCF302' value='INGENIERIA BIOMEDICA')
-                            // programa_academico
-                            input#LEADCF10(name='LEADCF10' value='2025-1')
-                            // periodo
-                            input#LEADCF7(name='LEADCF7' value='')
-                            // tipo de programa
-                            .terminos
-                            input#privacyTool3503766000237491098(type='checkbox' autocomplete='off' name='privacyTool' onclick='disableSubmit()' required='')
-                            label#labelCheckbox(for='privacyTool3503766000237491098')
-                                a(href='https://cayetano.edu.pe/politica-privacidad/' target='_blank' style='text-decoration:underline; color: #A80433;')
-                                | Pol&iacute;tica de privacidad y t&eacute;rminos de
-                                | servicio
-                            .button_enviar
-                            button.button__change
-                                h3 QUIERO M&Aacute;S INFORMACI&Oacute;N
-                            script.
-                                document.querySelector('.bloque1Container__form').addEventListener("submit", (ev) => {
-                                if( !grecaptcha.getResponse() ) {
-                                ev.preventDefault();
-                                alert("resolver captcha")
-                                }
-                                }
-                                )
-                                let ref = document.getElementById('reference');
-                                let url = window.location.href;
-                                ref.value = url;
-                                let inputTypeDocument = document.getElementById('LEADCF20');
-                                let inputNumDocument = document.getElementById('LEADCF21');
-                                inputTypeDocument.addEventListener("change", () => {
-                                inputNumDocument.removeAttribute("disabled");
-                                inputNumDocument.style.backgroundColor = "#fff";
-                                })
-                                function getUTMParams() {
-                                var params = {};
-                                var queryString = window.location.search;
-                                queryString = queryString.substr(1);
-                                var pairs = queryString.split("&");
-                                for (var i = 0; i < pairs.length; i++) {
-                                var pair = pairs[i].split("=");
-                                params[pair[0]] = pair[1];
-                                }
-                                return params;
-                                }
-                                var utmParams = getUTMParams();
-                                var utmSource = utmParams["utm_source"];
-                                var utmMedium = utmParams["utm_medium"];
-                                var utmCampaign = utmParams["utm_campaign"];
-                                var utmTerm = utmParams["utm_term"];
-                                var utmContent = utmParams["utm_content"];
-                                var utmId = utmParams["utm_id"];
-                                let source = document.getElementById('utm_source');
-                                let medium = document.getElementById('utm_medium');
-                                let campaign = document.getElementById('utm_campaign');
-                                let term = document.getElementById('utm_term');
-                                let content = document.getElementById('utm_content');
-                                let utm_id = document.getElementById('utm_id');
-                                if (utmSource) {
-                                source.value = utmSource;
-                                } else {
-                                source.value = "organico";
-                                }
-                                if (utmId) {
-                                utm_id.value = utmId;
-                                } else {
-                                utm_id.value = "ingenieria-biomedica";
-                                }
-                                if (utmMedium) {
-                                medium.value = utmMedium;
-                                } else {
-                                medium.value = "landing-page";
-                                }
-                                if (utmCampaign) {
-                                campaign.value = utmCampaign;
-                                } else {
-                                campaign.value = "pregrado-2025-01";
-                                }
-                                if (utmTerm) {
-                                term.value = utmTerm;
-                                } else {
-                                term.value = "digital";
-                                }
-                                if (utmContent) {
-                                content.value = utmContent;
-                                } else {
-                                content.value = "generico";
-                                }
-                                window.addEventListener("load", function () {
-                                const tiposDocumento = {
-                                DNI: {
-                                maxLength: 8,
-                                value: "",
-                                pattern: "[0-9]{8}",
-                                placeholder: "Ingresa numero de DNI",
-                                title: "Debe contener 8 números",
-                                },
-                                CarnédeExtranjería: {
-                                minLength: 5,
-                                maxLength: 20,
-                                value: "",
-                                pattern: "[0-9]{1,20}",
-                                placeholder: "Ingresa numero de Carnet",
-                                title: "Solo números hasta 20 digitos como maximo",
-                                },
-                                Pasaporte: {
-                                minLength: 6,
-                                maxLength: 20,
-                                value: "",
-                                pattern: "[0-9]{1,20}",
-                                placeholder: "Ingresa numero de Pasaporte",
-                                title: "Solo números hasta 20 digitos como maximo",
-                                },
-                                };
-                                let tipoDocumento = document.getElementById('LEADCF20');
-                                let numeroDocumento = document.getElementById('LEADCF21');
-                                tipoDocumento.addEventListener('change', function () {
-                                const tipo = this.value;
-                                if (tipo in tiposDocumento) {
-                                const datosDocumento = tiposDocumento[tipo];
-                                numeroDocumento.setAttribute('minlength', datosDocumento.minLength);
-                                numeroDocumento.setAttribute('maxlength', datosDocumento.maxLength);
-                                numeroDocumento.setAttribute('pattern', datosDocumento.pattern);
-                                numeroDocumento.value = "";
-                                numeroDocumento.setAttribute('value', datosDocumento.value);
-                                numeroDocumento.setAttribute('placeholder', datosDocumento.placeholder);
-                                numeroDocumento.setAttribute('title', datosDocumento.title);
-                                } else {
-                                numeroDocumento.removeAttribute('minlength');
-                                numeroDocumento.removeAttribute('maxlength');
-                                numeroDocumento.removeAttribute('pattern');
-                                numeroDocumento.removeAttribute('placeholder');
-                                numeroDocumento.removeAttribute('title');
-                                }
-                                });
-                                });
-                                // SCRIPT
-                                // OTHER SCRIPT
+                            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+                            meta(http-equiv='content-type' content='text/html;charset=UTF-8')
+                            .formTitle
+                                h3 D&eacute;janos tus datos y
+                                h4 nos contactaremos contigo
+                            form#webform6093725000001039003.formGrid(action='https://crmsandbox.zoho.com/crm/WebToLeadForm' name='WebToLeads3503766000678594001' method='POST' onsubmit='javascript:document.charset="UTF-8"' accept-charset='UTF-8')
+                                input(type='text' style='display:none;' name='xnQsjsdp' value='dca2765a5d03016cc1ad249409ff360c153a5fb0aaecfb26c1b12a317d835ec6')
+                                input#zc_gad(type='hidden' name='zc_gad' value='')
+                                input(type='text' style='display:none;' name='xmIwtLD' value='3b29c2ff618317f97dd6fe14c66f4b58b836008d814bab6189b926723e3d6c43e37730ae448c9ec137dd562bea4e913d')
+                                input(type='text' style='display:none;' name='actionType' value='TGVhZHM=')
+                                input(type='text' style='display:none;' name='returnURL' value='https://lp.cayetano.edu.pe/gracias-ingenieria-biomedica')
+                                style.
+                                    .oculto {
+                                        display: none;
+                                    }
+                                .double__form
+                                    input#First_Name.requerido(type='text' name='First Name' maxlength='40' placeholder='Nombres*' required='')
+                                    input#Last_Name.requerido(type='text' name='Last Name' maxlength='40' placeholder='Apellidos*' required='')
+                                .double__form
+                                    select#LEADCF20.requerido(name='LEADCF20' required='')
+                                        option(value='' disabled='' selected='') Tipo de documento*
+                                        option(value='DNI') DNI
+                                        option(value='CarnédeExtranjería') Carnet de Extranjeria
+                                        option(value='Pasaporte') Pasaporte
+                                    input#LEADCF21.requerido(type='text' name='LEADCF21' maxlength='20' placeholder='N.° de documento*' required='' disabled='true')
+                                input#Mobile.requerido(type='text' name='Mobile' maxlength='9' pattern='9[0-9]{8}' placeholder='Déjanos tu número de WhatsApp*')
+                                input#Email.requerido(type='text' name='Email' maxlength='100' ftype='email' placeholder='Correo*' required='')
+                                select#LEADCF14.requerido(name='LEADCF14' required='')
+                                    option(value='' disabled='' selected='') - &iquest;En qu&eacute; a&ntilde;o est&aacute;s del colegio? -
+                                    option(value='5to de secundaria') 5to. de secundaria
+                                    option(value='4to de secundaria') 4to. de secundaria
+                                    option(value='3ro de secundaria') 3ro. de secundaria
+                                    option(value='Ya termine el colegio') Ya termin&eacute; el colegio 
+                                .oculto
+                                    input#utm_source.UTM(name='LEADCF183' value='')
+                                    // utm_content
+                                    input#utm_medium.UTM(name='LEADCF189' value='')
+                                    // utm_medium
+                                    input#utm_campaign.UTM(name='LEADCF24' value='')
+                                    // utm_campaign
+                                    input#utm_id.UTM(name='LEADCF203' value='')
+                                    // utm_ID
+                                    input#utm_term.UTM(name='LEADCF184' value='')
+                                    // utm-term
+                                    input#utm_content.UTM(name='LEADCF182' value='')
+                                    // utm_content
+                                    input#reference(name='LEADCF168' value='')
+                                    // reference
+                                    input#LEADCF185(name='LEADCF185' value='PREGRADO')
+                                    // marca
+                                    input(name='Lead Status' value='Sin gestión')
+                                    // lead status
+                                    input(name='LEADCF1' value='Automáticos')
+                                    // tipo_origen
+                                    input(name='LEADCF198' value='Postulante')
+                                    // parentezco
+                                    input(name='Lead Source' value='Landing Page')
+                                    // fuente_lead
+                                    input#LEADCF22(name='LEADCF22' value='')
+                                    // comentario
+                                    input#LEADCF32(name='LEADCF32' value='')
+                                    // comentarioDrive
+                                    input#LEADCF194(name='LEADCF194' value='')
+                                    // horario_disponible
+                                    input#LEADCF220(name='LEADCF302' value='INGENIERIA BIOMEDICA')
+                                    // programa_academico
+                                    input#LEADCF10(name='LEADCF10' value='2025-1')
+                                    // periodo
+                                    input#LEADCF7(name='LEADCF7' value='')
+                                // tipo de programa
+                                .terminos
+                                    input#privacyTool3503766000237491098(type='checkbox' autocomplete='off' name='privacyTool' onclick='disableSubmit()' required='')
+                                    label#labelCheckbox(for='privacyTool3503766000237491098')
+                                        a(href='https://cayetano.edu.pe/politica-privacidad/' target='_blank' style='text-decoration:underline; color: #A80433;')
+                                        | Pol&iacute;tica de privacidad y t&eacute;rminos de
+                                        | servicio
+                                .button_enviar
+                                    button.button__change
+                                        h3 QUIERO M&Aacute;S INFORMACI&Oacute;N
+                                    script.
+                                        document.querySelector('.bloque1Container__form').addEventListener("submit", (ev) => {
+                                            if( !grecaptcha.getResponse() ) {
+                                                ev.preventDefault();
+                                                alert("resolver captcha")
+                                            }
+                                        }
+                                        )
+                                        let ref = document.getElementById('reference');
+                                        //- let url = window.location.href;
+                                        //- ref.value = url;
+                                        let inputTypeDocument = document.getElementById('LEADCF20');
+                                        let inputNumDocument = document.getElementById('LEADCF21');
+
+                                        inputTypeDocument.addEventListener("change", () => {
+                                            inputNumDocument.removeAttribute("disabled");
+                                            inputNumDocument.style.backgroundColor = "#fff";                                            
+                                        })
+
+                                        let comentario = document.getElementById('LEADCF22');
+                                        let comentario2 = document.getElementById('LEADCF32');
+
+                                        inputNumDocument.addEventListener("change", (ev) => {
+                                            console.log(ev.target.value)
+
+                                            //- ============ QR ==================
+                                            var container = document.querySelector('.qrcontainer');
+                                            container.style.display = "flex";
+                                            
+                                            var typeNumber = 8;
+                                            var errorCorrectionLevel = 'Q';
+                                            var qr = qrcode(typeNumber, errorCorrectionLevel);
+                                            qr.addData(ev.target.value);
+                                            qr.make();
+                                            var image64 = qr.createDataURL();
+                                            //- console.log(image64)
+                                            //- const canvas = document.createElement('canvas');
+                                            //- const ctx = canvas.getContext('2d');
+
+                                            //- var image = document.createElement('img');
+                                            //- image.src = image64;
+                                            //- canvas.width = image.width;
+                                            //- canvas.height = image.height;
+                                            //- ctx.drawImage(image, 0, 0);
+                                            //- const imagePNG = canvas.toDataURL('image/png');
+                                            //- console.log(imagePNG)
+                                            var content = document.getElementById('qrgrid');
+                                            const button = document.createElement('a');
+                                            button.href = image64;
+                                            button.download = image64;
+                                            button.text = `DNI${'\n'} ${ev.target.value}`;
+                                            
+                                            content.appendChild(button);
+                                        })
+
+                                        function getUTMParams() {
+                                        var params = {};
+                                        var queryString = window.location.search;
+                                        queryString = queryString.substr(1);
+                                        var pairs = queryString.split("&");
+                                        for (var i = 0; i < pairs.length; i++) {
+                                        var pair = pairs[i].split("=");
+                                        params[pair[0]] = pair[1];
+                                        }
+                                        return params;
+                                        }
+                                        var utmParams = getUTMParams();
+                                        var utmSource = utmParams["utm_source"];
+                                        var utmMedium = utmParams["utm_medium"];
+                                        var utmCampaign = utmParams["utm_campaign"];
+                                        var utmTerm = utmParams["utm_term"];
+                                        var utmContent = utmParams["utm_content"];
+                                        var utmId = utmParams["utm_id"];
+                                        let source = document.getElementById('utm_source');
+                                        let medium = document.getElementById('utm_medium');
+                                        let campaign = document.getElementById('utm_campaign');
+                                        let term = document.getElementById('utm_term');
+                                        let content = document.getElementById('utm_content');
+                                        let utm_id = document.getElementById('utm_id');
+                                        if (utmSource) {
+                                            source.value = utmSource;
+                                        } else {
+                                            source.value = "organico";
+                                        }
+                                        if (utmId) {
+                                            utm_id.value = utmId;
+                                        } else {
+                                            utm_id.value = "ingenieria-biomedica";
+                                        }
+                                        if (utmMedium) {
+                                            medium.value = utmMedium;
+                                        } else {
+                                            medium.value = "landing-page";
+                                        }
+                                        if (utmCampaign) {
+                                            campaign.value = utmCampaign;
+                                        } else {
+                                            campaign.value = "pregrado-2025-01";
+                                        }
+                                        if (utmTerm) {
+                                            term.value = utmTerm;
+                                        } else {
+                                            term.value = "digital";
+                                        }
+                                        if (utmContent) {
+                                            content.value = utmContent;
+                                        } else {
+                                            content.value = "generico";
+                                        }
+                                        window.addEventListener("load", function () {
+                                            const tiposDocumento = {
+                                                DNI: {
+                                                    maxLength: 8,
+                                                    value: "",
+                                                    pattern: "[0-9]{8}",
+                                                    placeholder: "Ingresa numero de DNI",
+                                                    title: "Debe contener 8 números",
+                                                },
+                                                CarnédeExtranjería: {
+                                                    minLength: 5,
+                                                    maxLength: 20,
+                                                    value: "",
+                                                    pattern: "[0-9]{1,20}",
+                                                    placeholder: "Ingresa numero de Carnet",
+                                                    title: "Solo números hasta 20 digitos como maximo",
+                                                },
+                                                Pasaporte: {
+                                                    minLength: 6,
+                                                    maxLength: 20,
+                                                    value: "",
+                                                    pattern: "[0-9]{1,20}",
+                                                    placeholder: "Ingresa numero de Pasaporte",
+                                                    title: "Solo números hasta 20 digitos como maximo",
+                                                },
+                                            };
+                                            let tipoDocumento = document.getElementById('LEADCF20');
+                                            let numeroDocumento = document.getElementById('LEADCF21');
+                                            tipoDocumento.addEventListener('change', function () {
+                                                const tipo = this.value;
+                                                if (tipo in tiposDocumento) {
+                                                    const datosDocumento = tiposDocumento[tipo];
+                                                    numeroDocumento.setAttribute('minlength', datosDocumento.minLength);
+                                                    numeroDocumento.setAttribute('maxlength', datosDocumento.maxLength);
+                                                    numeroDocumento.setAttribute('pattern', datosDocumento.pattern);
+                                                    numeroDocumento.value = "";
+                                                    numeroDocumento.setAttribute('value', datosDocumento.value);
+                                                    numeroDocumento.setAttribute('placeholder', datosDocumento.placeholder);
+                                                    numeroDocumento.setAttribute('title', datosDocumento.title);
+                                                } else {
+                                                    numeroDocumento.removeAttribute('minlength');
+                                                    numeroDocumento.removeAttribute('maxlength');
+                                                    numeroDocumento.removeAttribute('pattern');
+                                                    numeroDocumento.removeAttribute('placeholder');
+                                                    numeroDocumento.removeAttribute('title');
+                                                }
+                                            });
+
+                                        });
+                                        // SCRIPT
+                                        // OTHER SCRIPT
+                                .qrcontainer
+                                    h3 Descargar QR'S Aquí
+                                    .qrgrid#qrgrid
+                                        //- a DNI 1  
+                                        //- a DNI 2
                                 script(src='https://upch.sis-service-tivenos.com/formulario_global/formulario_general_min.js')
                                 script#wf_anal(src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=0437d1c573ea9551a6f78fecc75ed055b133d8637c177b8a930789ad34d2a8bfef7546cab2b29a294f78be18933a2358gid144c28dbf479caf4a652b4f2dd53fb61d7dd73ce678f540722674f734ca738b3gidf7258617d9ad292e18817da2738bf8d68d0f8283158afb13ff49649786a97d5egidc810aa67d5387b528f6ea9ce8821a5817278f4c9c284b8c15ca440a2904cd61e&tw=dd956dad13176aee758bad58a08496c10165e0e8527fe8a62da2a32461edd34c')
                                 iframe(name='captchaFrame' style='display:none;')
+                            
         .bloque2
             .bloque2Image
                 img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/ing_shield_movil_image1.webp", alt="")
